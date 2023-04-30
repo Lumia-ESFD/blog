@@ -5,7 +5,7 @@
   <meta name="generator" content="Hexo 6.3.0">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.18.5">
   <meta charset="utf-8">
-  <meta name="robots" content="none">
+  
 
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://gcore.jsdelivr.net'>
@@ -20,16 +20,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#f8f8f8">
   
-  <title>E.SFD</title>
+  <title>VSCODE + Github + Hexo 写博客注意事项 - E.SFD</title>
 
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="E.SFD">
-<meta property="og:url" content="https://lumia-esfd.github.io/404.html">
+    <meta name="description" content="VSCODE + Github + Hexo 写博客注意事项环境搭建网上有很多的搭建教程，搭建方法基本大同小异，在此就不再重复这部分内容，贴出几篇我参考的帖子：【保姆级】利用Github搭建自己的个人博客，看完就会文章写的很详细，按照步骤操作就可以了。   遇到的坑+解决方案1、ALKSFJLKF">
+<meta property="og:type" content="article">
+<meta property="og:title" content="VSCODE + Github + Hexo 写博客注意事项">
+<meta property="og:url" content="https://lumia-esfd.github.io/2023/04/30/VSCODE-Github-Hexo-%E5%86%99%E5%8D%9A%E5%AE%A2%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/index.html">
 <meta property="og:site_name" content="E.SFD">
+<meta property="og:description" content="VSCODE + Github + Hexo 写博客注意事项环境搭建网上有很多的搭建教程，搭建方法基本大同小异，在此就不再重复这部分内容，贴出几篇我参考的帖子：【保姆级】利用Github搭建自己的个人博客，看完就会文章写的很详细，按照步骤操作就可以了。   遇到的坑+解决方案1、ALKSFJLKF">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://lumia-esfd.github.io/%5Cpublic%5CPIC%5Clogo.png">
+<meta property="article:published_time" content="2023-04-30T08:40:12.000Z">
+<meta property="article:modified_time" content="2023-04-30T08:47:42.485Z">
 <meta property="article:author" content="E.SFD">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://lumia-esfd.github.io/%5Cpublic%5CPIC%5Clogo.png">
   
   
   
@@ -60,8 +66,10 @@
   
 
 
+
+
   <div class='l_body' id='start'>
-    <aside class='l_left' layout='404'>
+    <aside class='l_left' layout='post'>
     
 
   
@@ -73,32 +81,43 @@
 
 
 <div class="widgets">
-<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" placeholder="站内搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
+<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
 
-<widget class="widget-wrapper recent"><div class="widget-header cap theme dis-select"><span class="name">最近更新</span></div><div class="widget-body related-posts fs14"><a class="item title" href="/2023/04/30/VSCODE-Github-Hexo-%E5%86%99%E5%8D%9A%E5%AE%A2%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/"><span class="title">VSCODE + Github + Hexo 写博客注意事项</span></a><a class="item title" href="/2023/04/29/hello-world/"><span class="title">Hello World</span></a></div></widget>
+
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">VSCODE + Github + Hexo 写博客注意事项</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA"><span class="toc-text">环境搭建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91-%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-text">遇到的坑+解决方案</span></a></li></ol></div></div></widget>
+
+
 
 
 </div>
 
 
     </aside>
-    <div class='l_main list'>
+    <div class='l_main'>
       
 
       
-<article class='md-text error-page'>
-  <h1><img id='error' src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/404/1c830bfcd517d.svg' alt='404'></h1>
-  <p class='what'>
-    <strong>
-      很抱歉，您访问的页面不存在
-    </strong>
-  </p>
-  <p class='why'>
-    可能是输入地址有误或该地址已被删除
-  </p>
-  <br><br>
-  <a class='button' id='back' href="/">返回主页</a>
+
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div><div id="post-meta">发布于&nbsp;<time datetime="2023-04-30T08:40:12.000Z">2023-04-30</time></div></div>
+
+<article class='md-text content post'>
+<h1 class="article-title"><span>VSCODE + Github + Hexo 写博客注意事项</span></h1>
+<h1 id="VSCODE-Github-Hexo-写博客注意事项"><a href="#VSCODE-Github-Hexo-写博客注意事项" class="headerlink" title="VSCODE + Github + Hexo 写博客注意事项"></a>VSCODE + Github + Hexo 写博客注意事项</h1><h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><p>网上有很多的搭建教程，搭建方法基本大同小异，在此就不再重复这部分内容，贴出几篇我参考的帖子：<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/chenlove/p/15058170.html">【保姆级】利用Github搭建自己的个人博客，看完就会</a><br>文章写的很详细，按照步骤操作就可以了。  </p>
+<h2 id="遇到的坑-解决方案"><a href="#遇到的坑-解决方案" class="headerlink" title="遇到的坑+解决方案"></a>遇到的坑+解决方案</h2><p>1、ALKSFJLKF<br><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/%5Cpublic%5CPIC%5Clogo.png" alt="这是图片" title="Magic Gardens">  </p>
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></section></div>
+
 </article>
+
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2023/04/29/hello-world/">Hello World</a></div></section></div>
+
+
+
+
 
 
 
