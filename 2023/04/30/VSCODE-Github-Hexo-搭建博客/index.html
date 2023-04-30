@@ -23,15 +23,15 @@
   <title>VSCODE + Github + Hexo 搭建博客 - E.SFD</title>
 
   
-    <meta name="description" content="环境搭建网上有很多的搭建教程，搭建方法基本大同小异，在此就不再重复这部分内容，贴出几篇我参考的帖子：【保姆级】利用Github搭建自己的个人博客，看完就会文章写的很详细，按照步骤操作就可以了。   搭建流程 Github里新建&lt;Repository&gt; https:&#x2F;&#x2F;github.com&#x2F;&lt;UserName&gt;&#x2F;&lt;Repository&gt;.git 本博客示例：htt">
+    <meta name="description" content="环境搭建网上有很多的搭建教程，搭建方法基本大同小异，在此就不再重复这部分内容，贴出几篇我参考的帖子：【保姆级】利用Github搭建自己的个人博客，看完就会文章写的很详细，按照步骤操作就可以了。   搭建流程 Github里新建&lt;Repository&gt;https:&#x2F;&#x2F;github.com&#x2F;&lt;UserName&gt;&#x2F;&lt;Repository&gt;.git 本博客示例：http">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VSCODE + Github + Hexo 搭建博客">
 <meta property="og:url" content="https://lumia-esfd.github.io/2023/04/30/VSCODE-Github-Hexo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="E.SFD">
-<meta property="og:description" content="环境搭建网上有很多的搭建教程，搭建方法基本大同小异，在此就不再重复这部分内容，贴出几篇我参考的帖子：【保姆级】利用Github搭建自己的个人博客，看完就会文章写的很详细，按照步骤操作就可以了。   搭建流程 Github里新建&lt;Repository&gt; https:&#x2F;&#x2F;github.com&#x2F;&lt;UserName&gt;&#x2F;&lt;Repository&gt;.git 本博客示例：htt">
+<meta property="og:description" content="环境搭建网上有很多的搭建教程，搭建方法基本大同小异，在此就不再重复这部分内容，贴出几篇我参考的帖子：【保姆级】利用Github搭建自己的个人博客，看完就会文章写的很详细，按照步骤操作就可以了。   搭建流程 Github里新建&lt;Repository&gt;https:&#x2F;&#x2F;github.com&#x2F;&lt;UserName&gt;&#x2F;&lt;Repository&gt;.git 本博客示例：http">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-04-30T09:01:53.000Z">
-<meta property="article:modified_time" content="2023-04-30T13:06:31.069Z">
+<meta property="article:modified_time" content="2023-04-30T13:09:51.302Z">
 <meta property="article:author" content="E.SFD">
 <meta name="twitter:card" content="summary">
   
@@ -104,13 +104,13 @@
 <h1 class="article-title"><span>VSCODE + Github + Hexo 搭建博客</span></h1>
 <h2 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h2><p>网上有很多的搭建教程，搭建方法基本大同小异，在此就不再重复这部分内容，贴出几篇我参考的帖子：<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/chenlove/p/15058170.html">【保姆级】利用Github搭建自己的个人博客，看完就会</a><br>文章写的很详细，按照步骤操作就可以了。  </p>
 <h2 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h2><ol>
-<li><p>Github里<em><strong>新建</strong></em><code>&lt;Repository&gt;</code><br> <code>https://github.com/&lt;UserName&gt;/&lt;Repository&gt;.git</code><br> 本博客示例：<a target="_blank" rel="noopener" href="https://github.com/Lumia-ESFD/blog.git">https://github.com/Lumia-ESFD/blog.git</a></p>
+<li><p>Github里<em><strong>新建</strong></em><code>&lt;Repository&gt;</code><br><code>https://github.com/&lt;UserName&gt;/&lt;Repository&gt;.git</code><br> 本博客示例：<a target="_blank" rel="noopener" href="https://github.com/Lumia-ESFD/blog.git">https://github.com/Lumia-ESFD/blog.git</a></p>
 </li>
-<li><p>本地电脑<em><strong>新建文件夹</strong></em><code>&lt;dir&gt;</code><br> <code>mkdir E:\VSCODE\EDITBLOG</code></p>
+<li><p>本地电脑<em><strong>新建文件夹</strong></em><code>&lt;dir&gt;</code><br><code>mkdir E:\VSCODE\EDITBLOG</code></p>
 </li>
 <li><p>VSCODE–&gt;打开文件夹</p>
 </li>
-<li><p>VSCODE–&gt;终端<br> <code>hexo init</code><br><code>hexo g</code></p>
+<li><p>VSCODE–&gt;终端<br><code>hexo init</code><br><code>hexo g</code></p>
 </li>
 <li><p>编辑_config.yml</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">    type: git</span><br><span class="line">    repo: https://github.com/&lt;username&gt;/&lt;Repository&gt;</span><br><span class="line">    # 本博客示例：https://github.com/Lumia-ESFD/blog</span><br><span class="line">    # 可以用另外一种方式表达：git@github.com:Lumia-ESFD/Lumia-ESFD.github.io.git 注：没有试验过，不太清楚是否能够生效，据说比用http方式更新更稳妥。</span><br><span class="line">    branch: main</span><br></pre></td></tr></table></figure></li>
